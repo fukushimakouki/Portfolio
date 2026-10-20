@@ -17,16 +17,16 @@ npmやPythonのインストール、ビルドは不要です。
 
 ## 編集するファイル
 
-| 変更したいこと | ファイル |
-| --- | --- |
-| Home・Work・Aboutの文章、資格、イベント履歴 | `index.html` |
-| 現在の配色・フォントサイズ・余白・背景ブロックの見た目 | `editorial.css` |
-| 基本のレイアウト・スマートフォン用の設定 | `styles.css` |
-| 作品の横スクロール・表示演出・背景のスクロール速度と配置生成 | `app.js` |
-| Night Kitakyuの紹介文・リンク | `work/night-kitakyu/index.html` |
-| Fukku Beauty.の紹介文・リンク | `work/fukku-beauty/index.html` |
-| メンズメイク基礎編の紹介文・リンク | `work/mens-makeup/index.html` |
-| 写真・イラスト | `assets/` |
+| 変更したいこと                                               | ファイル                        |
+| ------------------------------------------------------------ | ------------------------------- |
+| Home・Work・Aboutの文章、資格、イベント履歴                  | `index.html`                    |
+| 現在の配色・フォントサイズ・余白・背景ブロックの見た目       | `editorial.css`                 |
+| 基本のレイアウト・スマートフォン用の設定                     | `styles.css`                    |
+| 作品の横スクロール・表示演出・背景のスクロール速度と配置生成 | `app.js`                        |
+| Night Kitakyuの紹介文・リンク                                | `work/night-kitakyu/index.html` |
+| Fukku Beauty.の紹介文・リンク                                | `work/fukku-beauty/index.html`  |
+| メンズメイク基礎編の紹介文・リンク                           | `work/mens-makeup/index.html`   |
+| 写真・イラスト                                               | `assets/`                       |
 
 CSSは `styles.css` の後に `editorial.css` を読み込みます。
 同じ設定がある場合は、後から読み込む `editorial.css` が優先されます。
