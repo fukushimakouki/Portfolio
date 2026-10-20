@@ -1,338 +1,313 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#292929" />
-    <title>Koki Fukushima — Portfolio</title>
-    <meta
-      name="description"
-      content="福島こうきのポートフォリオ。Webデザインとコーディングの制作作品、プロフィール、活動の記録を紹介します。"
-    />
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/fonts/fonts.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="editorial.css" />
-    <script defer src="app.js"></script>
-  </head>
 
-  <body>
-    <div class="ambient-background" aria-hidden="true">
-      <div class="ambient-scene">
-        <span class="ambient-block"></span><span class="ambient-block"></span
-        ><span class="ambient-block"></span><span class="ambient-block"></span
-        ><span class="ambient-block"></span><span class="ambient-block"></span
-        ><span class="ambient-block"></span>
-      </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#292929" />
+  <title>Koki Fukushima — Portfolio</title>
+  <meta name="description" content="福島晄祈のポートフォリオ。Webデザインとコーディングの制作作品、プロフィール、活動の記録を紹介します。" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="editorial.css" />
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-scene">
+      <span class="ambient-block"></span><span class="ambient-block"></span><span class="ambient-block"></span><span
+        class="ambient-block"></span><span class="ambient-block"></span><span class="ambient-block"></span><span
+        class="ambient-block"></span>
     </div>
-    <a class="skip" href="#main">本文へスキップ</a>
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <a class="brand" href="index.html#home" aria-label="福島こうきのポートフォリオ ホーム"
-          ><span class="brand-mark">kf.</span
-          ><span class="brand-name">KOKI FUKUSHIMA<br />PORTFOLIO</span></a
-        >
-        <nav class="nav" aria-label="メインナビゲーション">
-          <a href="#home" aria-current="location">Home</a><a href="#work">Work</a
-          ><a href="#about">About</a>
-        </nav>
+  </div>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html#home" aria-label="福島晄祈のポートフォリオ ホーム"><span class="brand-mark">kf.</span><span
+          class="brand-name">KOKI FUKUSHIMA<br />PORTFOLIO</span></a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="#home" aria-current="location">Home</a><a href="#work">Work</a><a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero wrap fade-in" aria-labelledby="home-title">
+      <div class="hero-top">
+        <p class="micro">THE PORTFOLIO OF KOKI FUKUSHIMA</p>
       </div>
-    </header>
+      <div class="hero-editorial">
+        <div class="hero-type">
+          <p class="hero-pretitle">Web design & coding</p>
+          <h1 id="home-title" aria-label="Portfolio">
+            <span class="title-first">Port</span><span class="title-second">folio<span
+                class="title-period">.</span></span>
+          </h1>
+          <div class="hero-description">
+            <span class="fine-line" aria-hidden="true"></span>
+            <p>好きから、伝わるデザインへ。<br /><span>制作と学びの記録。</span></p>
+          </div>
+        </div>
+        <div class="hero-composition">
+          <a class="hero-image hero-image-night" href="work/night-kitakyu/index.html"
+            aria-label="Night Kitakyuの作品詳細を見る"><img src="assets/night.webp" alt="北九州の街に広がる夜景"
+              fetchpriority="high" /><span class="hero-image-label">02 / NIGHT KITAKYU <span
+                aria-hidden="true">↗</span></span></a><a class="hero-image hero-image-beauty"
+            href="work/fukku-beauty/index.html" aria-label="Fukku Beauty.の作品詳細を見る"><img src="assets/beauty.webp"
+              alt="やわらかな光の中のメイク用品" /><span class="hero-beauty-label">Fukku Beauty.</span></a><span
+            class="vertical-caption" aria-hidden="true">DIFFERENT MOODS. ONE CREATOR.</span>
+        </div>
+      </div>
+    </section>
 
-    <main id="main">
-      <section id="home" class="hero wrap fade-in" aria-labelledby="home-title">
-        <div class="hero-top">
-          <p class="micro">THE PORTFOLIO OF KOKI FUKUSHIMA</p>
-        </div>
-        <div class="hero-editorial">
-          <div class="hero-type">
-            <p class="hero-pretitle">Web design <i>&</i> coding</p>
-            <h1 id="home-title" aria-label="Portfolio">
-              <span class="title-first">Port</span
-              ><span class="title-second">folio<span class="title-period">.</span></span>
-            </h1>
-            <div class="hero-description">
-              <span class="fine-line" aria-hidden="true"></span>
-              <p>好きから、伝わるデザインへ。<br /><span>制作と学びの記録。</span></p>
-            </div>
-          </div>
-          <div class="hero-composition">
-            <a
-              class="hero-image hero-image-night"
-              href="work/night-kitakyu/index.html"
-              aria-label="Night Kitakyuの作品詳細を見る"
-              ><img
-                src="assets/night.webp"
-                alt="北九州の街に広がる夜景"
-                fetchpriority="high"
-              /><span class="hero-image-label"
-                >02 / NIGHT KITAKYU <span aria-hidden="true">↗</span></span
-              ></a
-            ><a
-              class="hero-image hero-image-beauty"
-              href="work/fukku-beauty/index.html"
-              aria-label="Fukku Beauty.の作品詳細を見る"
-              ><img src="assets/beauty.webp" alt="やわらかな光の中のメイク用品" /><span
-                class="hero-beauty-label"
-                >Fukku Beauty.</span
-              ></a
-            ><span class="vertical-caption" aria-hidden="true">DIFFERENT MOODS. ONE CREATOR.</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="work" class="section work-section" aria-labelledby="work-title">
-        <div class="wrap section-head">
-          <div>
-            <div class="section-heading">
-              <span class="section-index">01 /</span>
-              <h2 id="work-title">Selected <em>work.</em></h2>
-            </div>
-            <p class="section-sub">これまでに制作したもの</p>
-          </div>
-          <div class="work-controls">
-            <p class="work-count" aria-live="polite" aria-atomic="true">
-              <strong data-current>01</strong> / 04
-            </p>
-            <button
-              class="arrow-button"
-              data-direction="prev"
-              type="button"
-              aria-label="前の作品へ"
-              disabled
-            >
-              <span class="arrow-icon" aria-hidden="true">←</span></button
-            ><button
-              class="arrow-button"
-              data-direction="next"
-              type="button"
-              aria-label="次の作品へ"
-            >
-              <span class="arrow-icon" aria-hidden="true">→</span>
-            </button>
-          </div>
-        </div>
-        <div
-          class="work-track"
-          tabindex="0"
-          role="region"
-          aria-label="作品一覧。横スクロール、左右の矢印キー、または前後のボタンで移動できます"
-        >
-          <article class="work-card">
-            <a
-              class="card-link"
-              href="work/fukku-beauty/index.html"
-              aria-label="Fukku Beauty.の作品詳細を見る"
-              ><div class="card-visual visual-beauty">
-                <img
-                  src="assets/beauty.webp"
-                  alt="メイク・スキンケアサイトで使用しているベースメイク用品の画像"
-                  loading="lazy"
-                  decoding="async"
-                /><span class="visual-label">MY SKINCARE & MAKEUP</span>
-              </div>
-              <div class="card-meta">
-                <div>
-                  <p class="card-kicker">
-                    WEB DESIGN / CODING <span aria-hidden="true"> / </span> 2026
-                  </p>
-                  <h3><span class="card-number">01</span>Fukku Beauty.</h3>
-                </div>
-                <span class="card-open" aria-hidden="true">↗</span>
-              </div></a
-            >
-          </article>
-          <article class="work-card">
-            <a
-              class="card-link"
-              href="work/night-kitakyu/index.html"
-              aria-label="Night Kitakyuの作品詳細を見る"
-              ><div class="card-visual visual-night">
-                <img
-                  src="assets/night.webp"
-                  alt="Night Kitakyuで使用している皿倉山からの夜景写真"
-                  loading="lazy"
-                  decoding="async"
-                /><span class="visual-title">Night Kitakyu</span
-                ><span class="visual-corner">THE NIGHTSCAPES OF KITAKYUSHU</span>
-              </div>
-              <div class="card-meta">
-                <div>
-                  <p class="card-kicker">
-                    WEB DESIGN / CODING <span aria-hidden="true"> / </span> 2026
-                  </p>
-                  <h3><span class="card-number">02</span>Night Kitakyu</h3>
-                </div>
-                <span class="card-open" aria-hidden="true">↗</span>
-              </div></a
-            >
-          </article>
-          <article class="work-card">
-            <a class="card-link" href="work/toresyoku/index.html" aria-label="トレ食の作品詳細を見る">
-              <div class="card-visual visual-toresyoku">
-                <img src="assets/toresyoku.webp" alt="トレ食のロゴ。食事とトレーニングを組み合わせた赤いビジュアル" loading="lazy" decoding="async" />
-              </div>
-              <div class="card-meta">
-                <div>
-                  <p class="card-kicker">WEB DESIGN / CODING <span aria-hidden="true"> / </span> 2026</p>
-                  <h3><span class="card-number">03</span>トレ食</h3>
-                </div>
-                <span class="card-open" aria-hidden="true">↗</span>
-              </div>
-            </a>
-          </article>
-          <article class="work-card">
-            <a
-              class="card-link"
-              href="work/mens-makeup/index.html"
-              aria-label="メンズメイク基礎編の作品詳細を見る"
-              ><div class="card-visual visual-mens">
-                <img
-                  src="assets/mens.webp"
-                  alt="メンズメイク基礎編で使用している洗顔のイラスト"
-                  loading="lazy"
-                  decoding="async"
-                /><span class="visual-label">清潔感、たったの５ステップで。</span>
-              </div>
-              <div class="card-meta">
-                <div>
-                  <p class="card-kicker">
-                    WEB DESIGN / CODING <span aria-hidden="true"> / </span> 2026
-                  </p>
-                  <h3><span class="card-number">04</span>メンズメイク基礎編</h3>
-                </div>
-                <span class="card-open" aria-hidden="true">↗</span>
-              </div></a
-            >
-          </article>
-        </div>
-        <div class="wrap work-foot">
-          <div class="progress" aria-hidden="true"><div class="progress-bar"></div></div>
-          <p class="work-hint">横にスクロールして見る <span aria-hidden="true">→</span></p>
-        </div>
-      </section>
-
-      <section id="about" class="section about wrap" aria-labelledby="about-title">
-        <div class="section-heading">
-          <span class="section-index">02 /</span>
-          <h2 id="about-title">A little <em>about me.</em></h2>
-        </div>
-        <p class="section-sub">私について</p>
-        <div class="about-intro">
-          <div>
-            <p class="profile-caption">PROFILE</p>
-            <h3 class="profile-name">福島 晄祈</h3>
-            <p class="profile-en">FUKUSHIMA KOKI</p>
-            <div class="profile-mark" aria-hidden="true">Kf.</div>
-          </div>
-          <div class="profile-text">
-            <p>
-              自主的にWebデザインとコーディングを学んでいます。<br />好きなことや身近な体験をきっかけに、AIを使いながらWebサイトを制作しています。
-            </p>
-            <p>
-              夜景や美容など、テーマに合わせた見せ方を考えることが好きです。<br />デザインから実装まで取り組み、作るたびに気づいたことを次の制作につなげています。
-            </p>
-          </div>
-        </div>
-        <div class="about-group">
-          <div class="group-label">
-            <h3 lang="en">School</h3>
-            <p>学校</p>
-          </div>
-          <div>
-            <div class="education-item">
-              <p class="school">KCS北九州情報専門学校</p>
-              <p class="school-detail">大学併修学科</p>
-            </div>
-            <div class="education-item">
-              <p class="school">北海道情報大学</p>
-              <p class="school-detail">経済情報学部 システム情報学科</p>
-              <br />
-              <p class="school-detail">ダブルスクール制で学習中<br />2028年卒業予定</p>
-            </div>
-          </div>
-        </div>
-        <div class="about-group">
-          <div class="group-label">
-            <h3 lang="en">Vision</h3>
-            <p>目指していること</p>
-          </div>
-          <div>
-            <p class="about-vision">見た目と使いやすさを考え、<br />形にできるWebデザイナーへ。</p>
-            <p class="about-note">
-              FigmaでのデザインからHTML・CSSでの実装まで。<br />見る人の気持ちを考えながら、伝わるサイトを作っていきたいです。
-            </p>
-          </div>
-        </div>
-        <div class="about-group">
-          <div class="group-label">
-            <h3 lang="en">Qualifications</h3>
-            <p>持っている資格</p>
-          </div>
-          <ul class="cert-list">
-            <li><span>J検 情報活用試験 ３級</span><time datetime="2024-07">2024.07</time></li>
-            <li><span>準中型自動車免許</span><time datetime="2024-08">2024.08</time></li>
-          </ul>
-        </div>
-        <div class="about-group">
-          <div class="group-label">
-            <h3 lang="en">Skills</h3>
-            <p>スキル</p>
-          </div>
-          <div>
-            <div class="skills">
-              <span class="skill">HTML</span><span class="skill">CSS</span
-              ><span class="skill">JavaScript<small>学習中</small></span>
-            </div>
-          </div>
-        </div>
-        <div class="about-group">
-          <div class="group-label">
-            <h3 lang="en">Tools</h3>
-            <p>制作ツール</p>
-          </div>
-          <div>
-            <div class="skills">
-              <span class="skill">Figma</span><span class="skill">GitHub</span
-              ><span class="skill">VS Code</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-group events">
-          <div class="group-label">
-            <h3 lang="en">Career</h3>
-            <p>経験</p>
-          </div>
-          <div class="timeline">
-            <article class="timeline-item">
-              <time datetime="2026-08">2026.08</time>
-              <h4>北九州商工会議所<br />インターンシップ</h4>
-              <p>企業の仕事や現場について知る機会として参加しました。</p>
-              <span class="event-type">INTERNSHIP</span>
-            </article>
-
-            <article class="timeline-item">
-              <time datetime="2026-10">2026.10</time>
-              <h4>KitaQ DX</h4>
-              <p>
-                メイク・スキンケア紹介サイトの制作と発表を経験。中高生向けの体験では、メンターとして制作をサポートしました。
-              </p>
-              <span class="event-type">WEB制作 / メンター</span>
-            </article>
-            
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrap footer-inner">
+    <section id="work" class="section work-section" aria-labelledby="work-title">
+      <div class="wrap section-head">
         <div>
-          <p class="footer-title">KOKI FUKUSHIMA — PORTFOLIO</p>
-          <p class="footer-copy">© 2026 Koki Fukushima</p>
+          <div class="section-heading">
+            <span class="section-index">01 /</span>
+            <h2 id="work-title">Selected <em>work.</em></h2>
+          </div>
+          <p class="section-sub">これまでに制作したもの</p>
         </div>
-        <a class="back-top" href="index.html#home">BACK TO TOP <span aria-hidden="true">↑</span></a>
+        <div class="work-controls">
+          <p class="work-count" aria-live="polite" aria-atomic="true">
+            <strong data-current>01</strong> / 04
+          </p>
+          <button class="arrow-button" data-direction="prev" type="button" aria-label="前の作品へ" disabled>
+            <span class="arrow-icon" aria-hidden="true">←</span></button><button class="arrow-button"
+            data-direction="next" type="button" aria-label="次の作品へ">
+            <span class="arrow-icon" aria-hidden="true">→</span>
+          </button>
+        </div>
       </div>
-    </footer>
-  </body>
+      <div class="work-track" tabindex="0" role="region" aria-label="作品一覧。横スクロール、左右の矢印キー、または前後のボタンで移動できます">
+        <article class="work-card">
+          <a class="card-link" href="work/fukku-beauty/index.html" aria-label="Fukku Beauty.の作品詳細を見る">
+            <div class="card-visual visual-beauty">
+              <img src="assets/beauty.webp" alt="メイク・スキンケアサイトで使用しているベースメイク用品の画像" loading="lazy" decoding="async" /><span
+                class="visual-label">MY SKINCARE & MAKEUP</span>
+            </div>
+            <div class="card-meta">
+              <div>
+                <p class="card-kicker">
+                  WEB DESIGN / CODING <span aria-hidden="true"> / </span> 2026
+                </p>
+                <h3><span class="card-number">01</span>Fukku Beauty.</h3>
+              </div>
+              <span class="card-open" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+        <article class="work-card">
+          <a class="card-link" href="work/night-kitakyu/index.html" aria-label="Night Kitakyuの作品詳細を見る">
+            <div class="card-visual visual-night">
+              <img src="assets/night.webp" alt="Night Kitakyuで使用している皿倉山からの夜景写真" loading="lazy" decoding="async" /><span
+                class="visual-title">Night Kitakyu</span><span class="visual-corner">THE NIGHTSCAPES OF
+                KITAKYUSHU</span>
+            </div>
+            <div class="card-meta">
+              <div>
+                <p class="card-kicker">
+                  WEB DESIGN / CODING <span aria-hidden="true"> / </span> 2026
+                </p>
+                <h3><span class="card-number">02</span>Night Kitakyu</h3>
+              </div>
+              <span class="card-open" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+        <article class="work-card">
+          <a class="card-link" href="work/toresyoku/index.html" aria-label="トレ食の作品詳細を見る">
+            <div class="card-visual visual-toresyoku">
+              <img src="assets/toresyoku.webp" alt="トレ食のロゴ。食事とトレーニングを組み合わせた赤いビジュアル" loading="lazy" decoding="async" />
+            </div>
+            <div class="card-meta">
+              <div>
+                <p class="card-kicker">WEB DESIGN / CODING <span aria-hidden="true"> / </span> 2026</p>
+                <h3><span class="card-number">03</span>トレ食</h3>
+              </div>
+              <span class="card-open" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+        <article class="work-card">
+          <a class="card-link" href="work/mens-makeup/index.html" aria-label="メンズメイク基礎編の作品詳細を見る">
+            <div class="card-visual visual-mens">
+              <img src="assets/mens.webp" alt="メンズメイク基礎編で使用している洗顔のイラスト" loading="lazy" decoding="async" /><span
+                class="visual-label">清潔感、たったの５ステップで。</span>
+            </div>
+            <div class="card-meta">
+              <div>
+                <p class="card-kicker">
+                  WEB DESIGN / CODING <span aria-hidden="true"> / </span> 2026
+                </p>
+                <h3><span class="card-number">04</span>メンズメイク基礎編</h3>
+              </div>
+              <span class="card-open" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="wrap work-foot">
+        <div class="progress" aria-hidden="true">
+          <div class="progress-bar"></div>
+        </div>
+        <p class="work-hint">横にスクロールして見る <span aria-hidden="true">→</span></p>
+      </div>
+    </section>
+
+    <section id="about" class="section about wrap" aria-labelledby="about-title">
+      <div class="section-heading">
+        <span class="section-index">02 /</span>
+        <h2 id="about-title">A little <em>about me.</em></h2>
+      </div>
+      <p class="section-sub">私について</p>
+      <div class="about-intro">
+        <div>
+          <p class="profile-caption">PROFILE</p>
+          <h3 class="profile-name">福島 晄祈</h3>
+          <p class="profile-en">FUKUSHIMA KOKI</p>
+          <div class="profile-mark" aria-hidden="true">Kf.</div>
+        </div>
+        <div class="profile-text">
+          <p>
+            自主的にWebデザインとコーディングを学んでいます。<br />好きなことや身近な体験をきっかけに、AIを使いながらWebサイトを制作しています。
+          </p>
+          <p>
+            夜景や美容など、テーマに合わせた見せ方を考えることが好きです。<br />デザインから実装まで取り組み、作るたびに気づいたことを次の制作につなげています。
+          </p>
+        </div>
+      </div>
+      <div class="about-group">
+        <div class="group-label">
+          <h3 lang="en">School</h3>
+          <p>学校</p>
+        </div>
+        <div>
+          <div class="education-item">
+            <p class="school">KCS北九州情報専門学校</p>
+            <p class="school-detail">大学併修学科</p>
+          </div>
+          <div class="education-item">
+            <p class="school">北海道情報大学</p>
+            <p class="school-detail">経済情報学部 システム情報学科</p>
+            <br />
+            <p class="school-detail">ダブルスクール制で学習中<br />2028年卒業予定</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-group">
+        <div class="group-label">
+          <h3 lang="en">Vision</h3>
+          <p>目指していること</p>
+        </div>
+        <div>
+          <p class="about-vision">見た目と使いやすさを考え、<br />形にできるWebデザイナーへ。</p>
+          <p class="about-note">
+            FigmaでのデザインからHTML・CSSでの実装まで。<br />見る人の気持ちを考えながら、伝わるサイトを作っていきたいです。
+          </p>
+        </div>
+      </div>
+      <div class="about-group">
+        <div class="group-label">
+          <h3 lang="en">Skills</h3>
+          <p>スキル</p>
+        </div>
+        <div>
+          <div class="skills">
+            <span class="skill">HTML</span><span class="skill">CSS</span><span
+              class="skill">JavaScript<small>学習中</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="about-group">
+        <div class="group-label">
+          <h3 lang="en">Tools</h3>
+          <p>制作ツール</p>
+        </div>
+        <div>
+          <div class="skills">
+            <span class="skill">Figma</span><span class="skill">GitHub</span><span class="skill">VS Code</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-group events">
+        <div class="group-label">
+          <h3 lang="en">Career</h3>
+          <p>経歴</p>
+        </div>
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <time datetime="2024-07">2024.07</time>
+            <h4>情報検定　情報活用試験3級</h4>
+            <p>
+              情報活用能力を測る検定試験に合格しました。
+            </p>
+            <span class="event-type">qualification</span>
+          </article>
+
+          <article class="timeline-item">
+            <time datetime="2024-08">2024.08</time>
+            <h4>準中型　運転免許</h4>
+            <p>
+              準中型の運転免許を取得しました。
+            </p>
+            <span class="event-type">qualification</span>
+          </article>
+
+          <article class="timeline-item">
+            <time datetime="2025-01">2025.01</time>
+            <h4>情報検定　情報システム試験　基本スキル</h4>
+            <p>
+              情報システムの基本スキルを測る検定試験に合格しました。
+            </p>
+            <span class="event-type">qualification</span>
+          </article>
+
+          <article class="timeline-item">
+            <time datetime="2026-08">2026.08</time>
+            <h4>チャレンジキャラバン</h4>
+            <p>
+              チームでWebアプリケーションの開発に参加しました。
+            </p>
+            <span class="event-type">EVENT</span>
+          </article>
+
+          <article class="timeline-item">
+            <time datetime="2026-10">2026.9~11</time>
+            <h4>KitaQDXミライバトンラボ</h4>
+            <p>
+              北九州市主催、9.26～11.28開催のDXリーダー育成プログラムに参加しました。
+            </p>
+            <span class="event-type">EVENT</span>
+          </article>
+
+          <article class="timeline-item">
+            <time datetime="2026-10">2026.10</time>
+            <h4>ミライバトンラボ 1Day デジタルワークショップ</h4>
+            <p>
+              中高生向けのワークショップにメンターとして参加しました。
+            </p>
+            <span class="event-type">EVENT</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-title">KOKI FUKUSHIMA — PORTFOLIO</p>
+        <p class="footer-copy">© 2026 Koki Fukushima</p>
+      </div>
+      <a class="back-top" href="index.html#home">BACK TO TOP <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+</body>
+
 </html>

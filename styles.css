@@ -1,7 +1,6 @@
 /* 色・余白・文字の設定はここでまとめて変更できます。 */
 :root {
   --bg: #292929;
-  --surface: #303030;
   --ink: #f1f0eb;
   --muted: #b3b3af;
   --line: #494949;
@@ -170,8 +169,6 @@ a:focus-visible,
 }
 
 .hero-top,
-.hero-bottom,
-.hero-foot,
 .section-head,
 .work-foot,
 .card-meta,
@@ -214,48 +211,6 @@ p {
 
 .hero h1 span {
   color: #92928f;
-}
-
-.hero-bottom {
-  align-items: flex-end;
-}
-
-.hero-copy {
-  font-size: clamp(20px, 2.25vw, 30px);
-  font-weight: 500;
-  line-height: 1.8;
-  letter-spacing: 0.06em;
-}
-
-.hero-profile {
-  font-size: 12px;
-  line-height: 2.1;
-  letter-spacing: 0.05em;
-}
-
-.hero-profile strong {
-  display: block;
-  color: var(--ink);
-  font-weight: 500;
-  font-size: 17px;
-}
-
-.hero-foot {
-  padding-top: 43px;
-  margin-top: 43px;
-  border-top: 1px solid var(--line);
-}
-
-.scroll-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 17px;
-  font-size: 11px;
-  letter-spacing: 0.1em;
-}
-
-.down {
-  font-size: 20px;
 }
 
 .section {
@@ -571,10 +526,6 @@ p {
   padding: 34px 0;
 }
 
-.about-group:first-of-type {
-  margin-top: 50px;
-}
-
 .group-label h3 {
   font-size: 16px;
   font-weight: 400;
@@ -615,27 +566,6 @@ p {
   color: var(--muted);
   line-height: 2;
   margin-top: 16px;
-}
-
-.cert-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.cert-list li {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 13px 0;
-  font-size: 14px;
-  border-bottom: 1px solid #3b3b3b;
-}
-
-.cert-list time {
-  font-size: 11px;
-  color: var(--muted);
-  white-space: nowrap;
 }
 
 .skills {
@@ -953,14 +883,6 @@ p {
     font-size: 13vw;
   }
 
-  .hero-bottom {
-    align-items: flex-start;
-  }
-
-  .hero-copy {
-    font-size: 23px;
-  }
-
   .work-track {
     padding-inline: 24px;
     scroll-padding-inline: 24px;
@@ -1052,34 +974,6 @@ p {
     font-size: 13.1vw;
     margin: 46px 0 45px;
     letter-spacing: -0.07em;
-  }
-
-  .hero-bottom {
-    display: block;
-  }
-
-  .hero-copy {
-    font-size: 22px;
-    line-height: 1.9;
-  }
-
-  .hero-profile {
-    margin-top: 32px;
-    font-size: 10px;
-    line-height: 1.8;
-  }
-
-  .hero-profile strong {
-    font-size: 14px;
-  }
-
-  .hero-foot {
-    padding-top: 23px;
-    margin-top: 31px;
-  }
-
-  .hero-foot .micro {
-    font-size: 8px;
   }
 
   .section-head {
@@ -1210,10 +1104,6 @@ p {
     padding: 28px 0;
   }
 
-  .about-group:first-of-type {
-    margin-top: 35px;
-  }
-
   .group-label {
     display: flex;
     align-items: center;
@@ -1234,10 +1124,6 @@ p {
 
   .school {
     font-size: 15px;
-  }
-
-  .cert-list li {
-    font-size: 12px;
   }
 
   .timeline h4 {

@@ -1,7 +1,6 @@
 /* Editorial direction: charcoal, ivory, fine serif typography, generous space. */
 :root {
   --bg: #282725;
-  --surface: #302f2c;
   --ink: #eee9df;
   --muted: #b2ada5;
   --line: #4a4742;
@@ -127,15 +126,6 @@
   font-size: 11px;
   letter-spacing: 0.12em;
   margin: 0 0 17px 7px;
-}
-
-.hero-pretitle i {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 23px;
-  vertical-align: -2px;
-  margin: 0 4px;
-  color: #d4cfc5;
 }
 
 .hero h1 {
@@ -275,53 +265,6 @@
   font-size: 8px;
   color: var(--muted);
   letter-spacing: 0.19em;
-}
-
-.hero-foot {
-  margin-top: 43px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-}
-
-.hero-signature {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 27px;
-  line-height: 1.2;
-}
-
-.hero-signature span {
-  display: block;
-  font-family: Arial, sans-serif;
-  font-size: 7px;
-  letter-spacing: 0.2em;
-  font-style: normal;
-  margin-top: 10px;
-  color: var(--muted);
-}
-
-.scroll-link {
-  font-size: 9px;
-  letter-spacing: 0.14em;
-  gap: 23px;
-}
-
-.scroll-circle {
-  width: 46px;
-  height: 46px;
-  border: 1px solid #655f54;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  font-size: 20px;
-  transition:
-    transform 0.3s,
-    background 0.3s;
-}
-
-.scroll-link:hover .scroll-circle {
-  transform: translateY(4px);
-  background: var(--black);
 }
 
 .section {
@@ -588,17 +531,6 @@
 
 .school-detail {
   font-size: 11px;
-}
-
-.cert-list li {
-  font-size: 12px;
-  padding: 16px 0;
-  border-bottom-color: #403d37;
-}
-
-.cert-list time {
-  font-family: var(--serif);
-  font-size: 15px;
 }
 
 .skills {
@@ -906,10 +838,6 @@
     width: 30px;
   }
 
-  .hero-foot {
-    margin-top: 35px;
-  }
-
   .about-intro,
   .about-group {
     gap: 60px;
@@ -1129,10 +1057,6 @@
     margin-bottom: 8px;
   }
 
-  .hero-pretitle i {
-    font-size: 19px;
-  }
-
   .hero h1 {
     font-size: clamp(145px, 42vw, 210px);
     line-height: 0.72;
@@ -1226,34 +1150,6 @@
     font-size: 5px;
     letter-spacing: 0.13em;
     max-width: 110px;
-  }
-
-  .hero-foot {
-    margin-top: 8px;
-    padding-top: 20px;
-    align-items: center;
-  }
-
-  .hero-signature {
-    font-size: 24px;
-  }
-
-  .hero-signature span {
-    font-size: 5px;
-    letter-spacing: 0.1em;
-    margin-top: 8px;
-  }
-
-  .scroll-link {
-    gap: 12px;
-    font-size: 6px;
-    letter-spacing: 0.1em;
-  }
-
-  .scroll-circle {
-    width: 34px;
-    height: 34px;
-    font-size: 17px;
   }
 
   .section {
@@ -1443,14 +1339,6 @@
 
   .school-detail {
     font-size: 10px;
-  }
-
-  .cert-list li {
-    font-size: 11px;
-  }
-
-  .cert-list time {
-    font-size: 14px;
   }
 
   .skills {
