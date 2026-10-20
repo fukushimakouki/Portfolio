@@ -10,13 +10,41 @@
       content="福島晄祈のポートフォリオ。Webデザインとコーディングの制作作品、プロフィール、活動の記録を紹介します。"
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script>
+      // 初回・トップ表示のみ。再訪、ページ内リンク、動きを減らす設定では省略。
+      (() => {
+        try {
+          const navigation = performance.getEntriesByType('navigation')[0];
+          if (location.hash || navigation?.type === 'back_forward' ||
+              matchMedia('(prefers-reduced-motion: reduce)').matches ||
+              sessionStorage.getItem('portfolio-intro-seen')) return;
+          document.documentElement.classList.add('intro-active', 'intro-preparing');
+          // 外部スクリプトが読み込めなくても、画面をふさぎ続けない。
+          window.portfolioIntroSafety = setTimeout(() => {
+            document.documentElement.classList.remove('intro-active', 'intro-preparing');
+          }, 4000);
+        } catch {}
+      })();
+    </script>
     <link rel="stylesheet" href="assets/fonts/fonts.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="editorial.css" />
+    <link rel="stylesheet" href="intro.css" />
+    <script defer src="intro.js"></script>
     <script defer src="app.js"></script>
   </head>
 
   <body>
+    <div class="site-intro" role="status" aria-label="ポートフォリオを読み込んでいます">
+      <div class="intro-content" aria-hidden="true">
+        <span class="intro-eyebrow">KOKI FUKUSHIMA</span>
+        <span class="intro-monogram">Kf<span>.</span></span>
+        <span class="intro-rule"></span>
+        <span class="intro-caption">WEB DESIGN &amp; CODING</span>
+      </div>
+      <button class="intro-skip" type="button">SKIP INTRO <span aria-hidden="true">↗</span></button>
+      <span class="intro-edition" aria-hidden="true">PORTFOLIO — 2026</span>
+    </div>
     <div class="ambient-background" aria-hidden="true">
       <div class="ambient-scene">
         <span class="ambient-block"></span>
