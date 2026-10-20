@@ -1,4 +1,5 @@
 /* Editorial direction: charcoal, ivory, fine serif typography, generous space. */
+
 :root {
   --bg: #282725;
   --ink: #eee9df;
@@ -770,7 +771,8 @@
 
   to {
     opacity: 1;
-    clip-path: inset(0);
+    clip-path: none;
+    /* 表示後は切り抜きを解除 */
     transform: translateY(0);
   }
 }
@@ -1688,5 +1690,10 @@ body {
 }
 
 /* トレ食のロゴ全体が見えるように表示する。 */
-.visual-toresyoku { background: #4c0000; }
-.visual-toresyoku img { object-fit: contain; }
+.visual-toresyoku {
+  background: #4c0000;
+}
+
+.visual-toresyoku img {
+  object-fit: contain;
+}

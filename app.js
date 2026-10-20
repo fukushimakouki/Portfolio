@@ -1,5 +1,6 @@
 /* 横スクロール、閲覧位置の保存、ナビゲーションの現在地表示 */
 const track = document.querySelector('.work-track');
+
 if (track) {
   const cards = [...track.querySelectorAll('.work-card')];
   const prev = document.querySelector('[data-direction="prev"]');
@@ -8,6 +9,7 @@ if (track) {
   const progress = document.querySelector('.progress-bar');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   let current = 0;
+
   progress.style.width = `${100 / cards.length}%`;
 
   function update() {
@@ -21,10 +23,12 @@ if (track) {
           : best,
       0,
     );
+
     number.textContent = String(current + 1).padStart(2, '0');
     prev.disabled = current === 0;
     next.disabled = current === cards.length - 1;
     progress.style.transform = `translateX(${current * 100}%)`;
+
     try {
       sessionStorage.setItem('portfolio-work-position', String(track.scrollLeft));
     } catch {}
@@ -41,6 +45,7 @@ if (track) {
   next.addEventListener('click', () => move(1));
   track.addEventListener('keydown', (event) => {
     if (event.target !== track) return;
+
     if (event.key === 'ArrowRight') {
       event.preventDefault();
       move(1);
@@ -52,22 +57,27 @@ if (track) {
   });
   track.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
+
   try {
     if (location.hash === '#work')
       track.scrollLeft = Number(sessionStorage.getItem('portfolio-work-position')) || 0;
   } catch {}
+
   update();
   window.addEventListener('pageshow', update);
 }
 
 const sections = [...document.querySelectorAll('main > section[id]')];
+
 if (sections.length) {
   const links = [...document.querySelectorAll('.nav a')];
 
   function activeSection() {
     let active = sections[0];
+
     for (const section of sections)
       if (section.getBoundingClientRect().top <= 160) active = section;
+
     links.forEach((link) => {
       if (link.hash === '#' + active.id) link.setAttribute('aria-current', 'location');
       else link.removeAttribute('aria-current');
@@ -83,7 +93,9 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
   const revealTargets = document.querySelectorAll(
     '.section-head, .about-intro, .about-group, .detail-section',
   );
+
   document.documentElement.classList.add('reveal-enabled');
+
   const revealObserver = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
@@ -95,6 +107,7 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
     },
     { threshold: 0.08 },
   );
+
   revealTargets.forEach((element) => {
     element.classList.add('editorial-reveal');
     revealObserver.observe(element);
@@ -103,16 +116,18 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
 
 // 本文の1/4速を保ち、同じ絵柄を繰り返さない一続きの背景を作る。
 const slowBackground = document.querySelector('.ambient-scene');
+
 if (slowBackground) {
   const backgroundScrollRatio = 0.25;
   const backgroundMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let scrollRange = 0;
   let slowBackgroundFrame = 0;
   let layoutKey = '';
-  // 同じ画面サイズでは再訪・逆スクロールでも配置が変わらない乱数。
 
+  // 同じ画面サイズでは再訪・逆スクロールでも配置が変わらない乱数。
   function seededBackgroundRandom() {
     let seed = 0x46a71f03;
+
     return () => {
       seed += 0x6d2b79f5;
       let value = seed;
@@ -124,6 +139,7 @@ if (slowBackground) {
 
   function makeBackgroundLayout(width, height, sceneHeight) {
     const mobile = width <= 560;
+
     // 最初の画面の物量・配置は、直前の版を維持する。
     const first = mobile
       ? [
@@ -154,8 +170,10 @@ if (slowBackground) {
     }));
     const random = seededBackgroundRandom();
     let y = height * 1.08;
+
     while (y < sceneHeight) {
       let candidate;
+
       for (let attempt = 0; attempt < 8; attempt++) {
         const w = width * ((mobile ? 0.24 : 0.15) + random() * (mobile ? 0.31 : 0.25));
         const h = height * (0.11 + random() * 0.19);
@@ -177,12 +195,14 @@ if (slowBackground) {
       blocks.push(candidate);
       y += height * (0.12 + random() * 0.07);
     }
+
     return blocks;
   }
 
   function paintSlowBackground() {
     slowBackgroundFrame = 0;
     if (document.hidden) return;
+
     const distance = Math.max(0, Math.min(scrollRange, scrollY)) * backgroundScrollRatio;
     slowBackground.style.transform = backgroundMotion.matches
       ? ''
@@ -198,6 +218,7 @@ if (slowBackground) {
     );
     const sceneHeight = height + scrollRange * backgroundScrollRatio + height * 0.35;
     const nextKey = `${width}:${height}:${sceneHeight}`;
+
     if (nextKey !== layoutKey) {
       layoutKey = nextKey;
       const fragment = document.createDocumentFragment();
@@ -217,6 +238,7 @@ if (slowBackground) {
       slowBackground.style.height = `${sceneHeight}px`;
       slowBackground.replaceChildren(fragment);
     }
+
     paintSlowBackground();
   }
 
@@ -235,6 +257,8 @@ if (slowBackground) {
       slowBackgroundFrame = 0;
     } else sizeSlowBackground();
   });
+
   if ('ResizeObserver' in window) new ResizeObserver(sizeSlowBackground).observe(document.body);
+
   sizeSlowBackground();
 }
