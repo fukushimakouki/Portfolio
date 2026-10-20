@@ -1798,3 +1798,7 @@ body {
     will-change: auto;
   }
 }
+
+/* トレ食のロゴ全体が見えるように表示する。 */
+.visual-toresyoku { background: #4c0000; }
+.visual-toresyoku img { object-fit: contain; }

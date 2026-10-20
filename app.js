@@ -8,6 +8,7 @@ if (track) {
   const progress = document.querySelector('.progress-bar');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   let current = 0;
+  progress.style.width = `${100 / cards.length}%`;
 
   function update() {
     const trackRect = track.getBoundingClientRect();
