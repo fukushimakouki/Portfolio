@@ -698,10 +698,35 @@
   line-height: 1.9;
 }
 
-.detail-copy p {
+.detail-copy p,
+.detail-copy ul,
+.detail-copy ol {
   font-size: 13px;
   color: #d1cbc1;
   line-height: 2.4;
+}
+
+.detail-copy p,
+.detail-copy ul,
+.detail-copy ol {
+  margin: 0;
+}
+
+.detail-copy ul,
+.detail-copy ol {
+  padding-inline-start: 1.5em;
+}
+
+.detail-copy li + li {
+  margin-top: 0.5em;
+}
+
+.detail-copy p + p,
+.detail-copy p + ul,
+.detail-copy p + ol,
+.detail-copy ul + p,
+.detail-copy ol + p {
+  margin-top: 1.5em;
 }
 
 .detail-photo {
@@ -1439,7 +1464,9 @@
     font-size: 21px;
   }
 
-  .detail-copy p {
+  .detail-copy p,
+  .detail-copy ul,
+  .detail-copy ol {
     font-size: 12px;
   }
 
